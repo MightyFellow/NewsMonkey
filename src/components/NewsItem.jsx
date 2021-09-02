@@ -28,7 +28,7 @@ export default class NewsItem extends Component {
             <p className="card-text">{description}</p>
             <p className="card-text">
               <small className="text-muted">
-                By {author ? author : "UNKNOWN"} on{" "}
+                By {author ? author : "Unknown"} on{" "}
                 {new Date(date).toUTCString()}
               </small>
             </p>
