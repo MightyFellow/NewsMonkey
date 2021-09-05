@@ -18,8 +18,6 @@ const News = (props) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
 
-  document.title = `${capitalizeFirstLetter(category)} - NewsMonkey`;
-
   const updateNews = async () => {
     setLoading(true);
     setProgress(40);
@@ -38,6 +36,7 @@ const News = (props) => {
       setProgress(100);
     }
     fetchData();
+    document.title = `${capitalizeFirstLetter(category)} - NewsMonkey`;
     // eslint-disable-next-line
   }, []);
 
