@@ -38,6 +38,7 @@ const News = (props) => {
       setProgress(100);
     }
     fetchData();
+    // eslint-disable-next-line
   }, []);
 
   const fetchMoreData = async () => {
